@@ -1,0 +1,115 @@
+.system-feedback {
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 14px;
+}
+
+.system-feedback--error {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.24);
+  color: #fca5a5;
+}
+
+.system-tenant-list {
+  display: grid;
+  gap: 12px;
+}
+
+.system-tenant-card {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  padding: 16px;
+  color: var(--vis-text-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.system-tenant-card:hover,
+.system-tenant-card.is-active {
+  border-color: rgba(82, 116, 255, 0.35);
+  background: rgba(9, 26, 97, 0.16);
+  transform: translateY(-1px);
+}
+
+.system-tenant-head,
+.system-tenant-foot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.system-tenant-head strong {
+  display: block;
+  font-size: 15px;
+}
+
+.system-tenant-head small,
+.system-tenant-foot span {
+  color: var(--vis-text-muted);
+}
+
+.system-tenant-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+  color: var(--vis-text-secondary);
+  font-size: 12px;
+}
+
+.system-inner-card {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.system-empty {
+  padding: 18px;
+  border-radius: 12px;
+  color: var(--vis-text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.system-empty--table {
+  text-align: center;
+}
+
+.system-user-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.system-user-cell small {
+  color: var(--vis-text-muted);
+}
+
+.system-role-select {
+  min-width: 156px;
+}
+
+.system-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.system-row-actions button {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  color: var(--vis-text-secondary);
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.system-row-actions button:hover {
+  color: var(--vis-text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}

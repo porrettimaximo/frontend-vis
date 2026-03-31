@@ -1,0 +1,76 @@
+@import '../styles/console-page.css';
+
+.staff-feedback {
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 13px;
+}
+
+.staff-feedback--error {
+  background: rgba(229, 73, 34, 0.14);
+  border: 1px solid rgba(229, 73, 34, 0.28);
+  color: #ffb3a3;
+}
+
+.staff-role-card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.staff-role-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.staff-role-card small {
+  color: var(--vis-text-muted);
+}
+
+.staff-user-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.staff-user-cell small {
+  color: var(--vis-text-muted);
+}
+
+.staff-role-select {
+  width: 100%;
+  min-width: 150px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--vis-bg-input);
+  color: var(--vis-text-primary);
+  padding: 10px 12px;
+}
+
+.staff-row-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.staff-row-actions button,
+.staff-submit {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--vis-text-primary);
+  padding: 9px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.staff-row-actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.staff-empty {
+  text-align: center;
+  color: var(--vis-text-muted);
+}

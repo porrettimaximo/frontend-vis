@@ -1,0 +1,37 @@
+@import '../styles/console-page.css';
+
+.payments-feedback {
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.payments-feedback--error {
+  background: rgba(229, 73, 34, 0.18);
+  border: 1px solid rgba(229, 73, 34, 0.28);
+  color: #ffae9e;
+}
+
+.payments-feedback--success {
+  background: rgba(55, 142, 14, 0.16);
+  border: 1px solid rgba(55, 142, 14, 0.24);
+  color: #b8f1a5;
+}
+
+.payments-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.payments-concept {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.payments-concept small {
+  color: var(--vis-text-muted);
+}

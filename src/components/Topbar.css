@@ -1,0 +1,78 @@
+.topbar {
+  height: 64px;
+  background-color: rgba(18, 18, 18, 0.8);
+  border-bottom: 1px solid var(--vis-border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-spacer,
+.topbar-actions {
+  flex: 1;
+}
+
+.topbar-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--vis-text-primary);
+  font-size: 13px;
+  font-weight: 500;
+}
+.topbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.28), rgba(59, 130, 246, 0.12));
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  color: var(--vis-text-primary);
+  font-weight: 700;
+}
+
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.user-meta small {
+  color: var(--vis-text-muted);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.logout-button {
+  border: none;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--vis-text-secondary);
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  color: var(--vis-text-primary);
+  background: rgba(255, 255, 255, 0.1);
+}

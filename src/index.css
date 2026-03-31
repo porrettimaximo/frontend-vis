@@ -1,0 +1,65 @@
+/* VIS Design System - Tokens Globales */
+:root {
+  --vis-bg-app: #121212;
+  --vis-bg-sidebar: #201B1B;
+  --vis-bg-surface: #201B1B;
+  --vis-bg-input: #1B1616;
+  --vis-bg-elevated: #473F3F;
+
+  --vis-border-subtle: #2B2626;
+
+  --vis-primary: #091A61;
+  --vis-primary-hover: #0325AE;
+
+  --vis-text-primary: #D7D1CB;
+  --vis-text-secondary: #D0CAC3;
+  --vis-text-muted: #A6A4A3;
+  --vis-text-disabled: #6D6161;
+
+  --vis-success: #378E0E;
+  --vis-warning: #E58422;
+  --vis-failure: #E54922;
+
+  --vis-font-family: 'IBM Plex Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--vis-font-family);
+  background-color: var(--vis-bg-app);
+  color: var(--vis-text-primary);
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.material-icons-round {
+  font-size: 20px;
+  line-height: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D2D2D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3D3D3D;
+}

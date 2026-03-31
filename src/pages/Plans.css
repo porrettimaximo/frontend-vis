@@ -1,0 +1,45 @@
+@import '../styles/console-page.css';
+
+.plans-feedback {
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.plans-feedback--error {
+  background: rgba(229, 73, 34, 0.18);
+  border: 1px solid rgba(229, 73, 34, 0.28);
+  color: #ffae9e;
+}
+
+.plans-feedback--success {
+  background: rgba(55, 142, 14, 0.16);
+  border: 1px solid rgba(55, 142, 14, 0.24);
+  color: #b8f1a5;
+}
+
+.plans-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.plans-form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.plans-form-actions--full {
+  grid-column: 1 / -1;
+}
+
+.plans-plan-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plans-plan-cell small {
+  color: var(--vis-text-muted);
+}

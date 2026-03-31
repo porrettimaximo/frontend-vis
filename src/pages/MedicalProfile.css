@@ -1,0 +1,123 @@
+@import '../styles/console-page.css';
+
+.medical-feedback {
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.medical-feedback--error {
+  background: rgba(229, 73, 34, 0.18);
+  border: 1px solid rgba(229, 73, 34, 0.28);
+  color: #ffae9e;
+}
+
+.medical-feedback--success {
+  background: rgba(55, 142, 14, 0.16);
+  border: 1px solid rgba(55, 142, 14, 0.24);
+  color: #b8f1a5;
+}
+
+.medical-member {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.medical-member strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.medical-member small {
+  color: var(--vis-text-muted);
+}
+
+.medical-member__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.medical-member__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.medical-alert {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(229, 132, 34, 0.14);
+  border: 1px solid rgba(229, 132, 34, 0.18);
+}
+
+.medical-alert.is-ok {
+  background: rgba(55, 142, 14, 0.14);
+  border-color: rgba(55, 142, 14, 0.2);
+}
+
+.medical-alert.is-alert {
+  background: rgba(229, 132, 34, 0.14);
+  border-color: rgba(229, 132, 34, 0.18);
+}
+
+.medical-form-card {
+  height: fit-content;
+}
+
+.medical-form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.medical-upload {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.medical-document-item {
+  align-items: flex-start;
+}
+
+.medical-document-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.medical-delete {
+  color: #ffae9e;
+}
+
+.medical-alert span {
+  color: var(--vis-warning);
+}
+
+.medical-alert p {
+  margin: 6px 0 0;
+  color: var(--vis-text-secondary);
+  font-size: 13px;
+}
+
+@media (max-width: 860px) {
+  .medical-upload {
+    grid-template-columns: 1fr;
+  }
+
+  .medical-document-actions {
+    justify-content: flex-start;
+  }
+}

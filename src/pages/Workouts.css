@@ -1,0 +1,27 @@
+@import '../styles/console-page.css';
+
+.workouts-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.workouts-card h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.workouts-card p {
+  margin: -8px 0 0;
+  color: var(--vis-text-muted);
+}
+
+.workouts-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(9, 26, 97, 0.28);
+  color: #8fafef;
+}

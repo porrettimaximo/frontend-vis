@@ -1,0 +1,40 @@
+@import '../styles/console-page.css';
+
+.require-role-card {
+  display: grid;
+  gap: 16px;
+  max-width: 720px;
+}
+
+.require-role-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(29, 66, 193, 0.2);
+  color: #f1e4d2;
+}
+
+.require-role-icon .material-icons-round {
+  font-size: 28px;
+}
+
+.require-role-card h1 {
+  margin: 0;
+}
+
+.require-role-card p {
+  margin: 0;
+  color: rgba(241, 228, 210, 0.74);
+  max-width: 56ch;
+}
+
+.require-role-meta {
+  color: #f0b77c;
+}
+
+.require-role-link {
+  width: fit-content;
+  text-decoration: none;
+}
